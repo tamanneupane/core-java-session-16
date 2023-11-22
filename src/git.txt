@@ -1,0 +1,30 @@
+Programming Problem while working
+
+1. Multiple developers working on the same project want to merge their work.
+2. Backing up the code was difficult.
+3. Code reversal.
+4. Code access in different device.
+
+1.0.0 => Stable
+1.0.1 => New problem
+
+Git Setup First Time:
+1. git init
+2. git remote add origin <GIT URL>
+3. git add <File Name> or git add .
+4. git commit -m "Initial Commit"
+5. git push origin main or git push origin master
+
+Later on :
+1. git add <File Name> or git add .
+2. git commit -m "What changes you made summary"
+3. git pull origin <branch_name>
+4. git push origin <branch_name>
+
+Clone Project :
+git clone <Repository_URL(SSH)>
+
+Branch Commands :
+1. To check the available branch : git branch
+2. To create new branch : git checkout -b <new_branch_name>
+3. To switch between branches : git checkout <existing_branch_name>
