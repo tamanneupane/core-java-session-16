@@ -44,11 +44,16 @@ public class BankAccount {
 
     public static void main(String[] args) {
 
-        new BankAccount();
+        BankAccount tamanAccount = new BankAccount();
+        tamanAccount.accountHolderName = "Taman Neupane";
+        tamanAccount.accountNumber = "123456789";
 
-        new BankAccount();
+        BankAccount abcAccount = new BankAccount();
+        abcAccount.accountHolderName = "ABC Neupane";
+        abcAccount.accountNumber = "987654321";
 
+        String ahn = abcAccount.accountHolderName;
+        System.out.println(ahn);
     }
-
 
 }
