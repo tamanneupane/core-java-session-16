@@ -15,6 +15,10 @@ public class NabilBankApplication {
 //        tamanAccount.accountHolderGender = Gender.MALE;
         tamanAccount.setAccountHolderGender(Gender.MALE);
 
+        tamanAccount.setSocialSecurityNumber("123456789");
+
+        System.out.println(tamanAccount.getPublicSocialSecurityNumber());
+
         BankAccount abcAccount = new BankAccount();
 
 //        abcAccount.accountHolderName = "ABC Neupane";
@@ -23,8 +27,8 @@ public class NabilBankApplication {
 //        abcAccount.accountNumber = "987654321";
 //        abcAccount.accountHolderGender = Gender.PREFER_NOT_TO_SAY;
 
-//        String ahn = abcAccount.accountHolderName;
-        String ahn = abcAccount.getAccountHolderName();
+        String ahn = tamanAccount.getAccountHolderName();
+        String ahn1 = abcAccount.getAccountHolderName();
 
         System.out.println(ahn);
     }

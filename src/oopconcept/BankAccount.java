@@ -20,6 +20,7 @@ public class BankAccount {
 
     // SSN - String - variable
     private String socialSecurityNumber;
+    private String publicSocialSecurityNumber;
 
     // Account Holder Address - String - variable
     private String accountHolderAddress;
@@ -68,5 +69,18 @@ public class BankAccount {
         return this.accountHolderGender;
     }
 
+    public void setSocialSecurityNumber(String socialSecurityNumber){
+        this.socialSecurityNumber = socialSecurityNumber;
+        this.publicSocialSecurityNumber = socialSecurityNumber.substring(socialSecurityNumber.length() - 4);
+    }
 
+    public String getPublicSocialSecurityNumber(){
+        return  this.publicSocialSecurityNumber;
+    }
+
+    public double balanceEnquiry(BankAccount bankAccount){
+        // Balance check logic
+
+        return 0;
+    }
 }
