@@ -43,6 +43,10 @@ public class BankAccount {
     // Bank Name - String - Constant (If we are just talking about single bank)
     private final String BANK_NAME = "NABIL Bank Limited";
 
+    public BankAccount(){
+        System.out.println("Constructor Called");
+    }
+
     // Behaviour
 
     public void setAccountHolderName(String accountHolderName){
