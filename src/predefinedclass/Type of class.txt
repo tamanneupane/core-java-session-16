@@ -1,0 +1,7 @@
+Different type of class possible in java on the basis of object creation:
+
+1. The objects are created using new keyword. Example : BankAccount, FunctionBasic, Date
+2. The class whose object cannot be created. Example : Math
+3. The class whose object are created using a function that is inside the class.
+Example : LocalDate, LocalDateTime
+4. The class whose only one object can be created. Example : Singleton Pattern

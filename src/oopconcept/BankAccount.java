@@ -5,50 +5,86 @@ public class BankAccount {
     // States
 
     // Account Holder Name - String - variable
-    String accountHolderName;
+    private String accountHolderName;
 
     // Account Number - String - variable
-    String accountNumber;
+    private String accountNumber;
+
+    private String accountType;
 
     // Account Balance - double - variable
-    double accountBalance;
+    private double accountBalance;
 
     // Routing Number - String - variable
-    String routingNumber;
+    private String routingNumber;
 
     // SSN - String - variable
-    String socialSecurityNumber;
+    private String socialSecurityNumber;
+    private String publicSocialSecurityNumber;
 
     // Account Holder Address - String - variable
-    String accountHolderAddress;
+    private String accountHolderAddress;
 
     // Account Holder DOB - String - variable
-    String accountHolderDOB;
+    private String accountHolderDOB;
 
     // Account Holder Gender - String - variable
-    String accountHolderGender;
+    private Gender accountHolderGender;
 
     // Account Holder Phone Number - String - variable
-    String accountHolderPhoneNumber;
+    private String accountHolderPhoneNumber;
 
     // Account Holder Email - String - variable
-    String accountHolderEmail;
+    private String accountHolderEmail;
 
     // is Minor Account - boolean - variable
-    boolean isMinorAccount;
+    private boolean isMinorAccount;
 
     // Bank Name - String - Constant (If we are just talking about single bank)
-    final String BANK_NAME = "NABIL";
+    private final String BANK_NAME = "NABIL Bank Limited";
+
+    public BankAccount(){
+        System.out.println("Constructor Called");
+    }
 
     // Behaviour
 
-    public static void main(String[] args) {
-
-        new BankAccount();
-
-        new BankAccount();
-
+    public void setAccountHolderName(String accountHolderName){
+        this.accountHolderName =  accountHolderName;
     }
 
+    public String getAccountHolderName(){
+        return this.accountHolderName;
+    }
 
+    public void setAccountNumber(String accountNumber){
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountNumber(){
+        return this.accountNumber;
+    }
+
+    public void setAccountHolderGender(Gender accountHolderGender){
+        this.accountHolderGender = accountHolderGender;
+    }
+
+    public Gender getAccountHolderGender(){
+        return this.accountHolderGender;
+    }
+
+    public void setSocialSecurityNumber(String socialSecurityNumber){
+        this.socialSecurityNumber = socialSecurityNumber;
+        this.publicSocialSecurityNumber = socialSecurityNumber.substring(socialSecurityNumber.length() - 4);
+    }
+
+    public String getPublicSocialSecurityNumber(){
+        return  this.publicSocialSecurityNumber;
+    }
+
+    public double balanceEnquiry(BankAccount bankAccount){
+        // Balance check logic
+
+        return 0;
+    }
 }
