@@ -1,4 +1,4 @@
-package oopconcept.time;
+package time;
 
 public class LocalDateTimeExample {
 

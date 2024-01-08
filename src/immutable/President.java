@@ -1,4 +1,4 @@
-package oopconcept.immutable;
+package immutable;
 
 public final class President {
     private final String name;
@@ -9,7 +9,9 @@ public final class President {
         this.age = age;
     }
 
-    public static President createPresident(String name,int age) {
+    public static President createPresident(String name, int age) {
         return new President(name, age);
     }
 }
+
+

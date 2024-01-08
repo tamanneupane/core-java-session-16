@@ -1,4 +1,4 @@
-package designpattern1.app;
+package designpattern.app;
 
 public class LatestUIAdapter implements OldUI {
     private final LatestUI latestUI;

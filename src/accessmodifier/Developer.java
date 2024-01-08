@@ -1,4 +1,4 @@
 package accessmodifier;
 
-public class Developer {
+public class Developer extends Student {
 }

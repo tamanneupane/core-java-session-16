@@ -1,4 +1,8 @@
 package learninterface;
 
-public interface FactoryService {
+public interface Vehicle extends EVehicle {
+    void startEngine();
+
+    void stopEngine();
+
 }

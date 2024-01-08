@@ -1,4 +1,7 @@
 package accessmodifier.package1;
 
-public class Days {
+public enum Days {
+    SUNDAY,
+    MONDAY,
+    TUESDAY
 }

@@ -1,8 +1,8 @@
-package designpattern1;
+package designpattern;
 
-import designpattern1.app.LatestUIAdapter;
-import designpattern1.app.MobileApp;
-import designpattern1.app.XmlData;
+import designpattern.app.LatestUIAdapter;
+import designpattern.app.MobileApp;
+import designpattern.app.XmlData;
 
 public class Main {
     public static void main(String[] args) {

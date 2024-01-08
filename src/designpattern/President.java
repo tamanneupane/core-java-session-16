@@ -1,4 +1,4 @@
-package designpattern1;
+package designpattern;
 
 public class President {
     private final String name;

@@ -1,2 +1,4 @@
-package oopconcept;public class NabilBankMobileAppServiceResponse {
+package oopconcept;
+
+public class NabilBankMobileAppServiceResponse {
 }

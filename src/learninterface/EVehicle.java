@@ -1,2 +1,5 @@
-package learninterface;public interface EVehicle {
+package learninterface;
+
+public interface EVehicle {
+    void accelerate();
 }
